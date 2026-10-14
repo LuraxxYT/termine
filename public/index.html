@@ -1,0 +1,8 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Terminboard</title><link rel="stylesheet" href="/style.css"><script src="/socket.io/socket.io.js"></script></head><body class="display-body">
+<div class="display-shell">
+  
+  <main id="tiles" class="tiles"><div class="empty-state"><div class="empty-icon">◷</div><h2>Dein Board wird vorbereitet</h2><p>Termine erscheinen hier automatisch.</p></div></main>
+  <div class="page-controls fullscreen-controls"><button id="prevPage" aria-label="Vorherige Seite" title="Vorherige Seite">‹</button><button id="nextPage" aria-label="Nächste Seite" title="Nächste Seite">›</button></div><span id="pageInfo" hidden>SEITE 01 / 01</span><span id="clock" hidden></span><span id="boardTitle" hidden></span><span id="boardSubtitle" hidden></span>
+</div>
+<div id="actionOverlay" class="action-overlay" hidden><div class="action-card"><span class="action-kicker">TERMIN ABGELAUFEN</span><h2 id="actionTitle"></h2><p id="actionMessage"></p><button id="closeAction" class="primary-btn">Verstanden</button></div></div>
+<audio id="endSound" preload="auto" src="/end.wav"></audio><script src="/display.js"></script></body></html>
